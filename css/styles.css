@@ -1,0 +1,73 @@
+html, body {
+    min-height: 100vh;
+    min-width: 100vw;
+    background: linear-gradient(to bottom, #000000, #FF1B1B);
+}
+
+.canvas {
+    position: relative;
+    width: 100vw;
+    height: 75vh;
+    overflow: hidden;
+}
+
+.logo {
+    padding-top: 3vh;
+    padding-left: 40%;
+    padding-right: 40%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+    max-height: fit-content;
+    height: auto;
+    cursor: zoom-in;
+}
+
+.item {
+    position: absolute;
+    max-height: 20%;
+    max-width: 20%;
+}
+
+.itemS {
+    position: absolute;
+    max-height: 30vh;
+    max-width: 30vw;
+}
+  
+/* Individual placements */
+.i1 { top: 5vh; left: 5vw; }
+.i2 { top: 15vh; left: 20vw; }
+.i3 { top: 20vh; left: 60vw; }
+.i4 { top: 7vh; left: 75vw; }
+.i5 { bottom: 20vh; left: 7vw; }
+.i6 { bottom: 20vh; right: 7vw; }
+.i7 { top: 25vh; left: 35vw; }
+
+p {
+    color: black;
+    font-size: 1.0em;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+footer {
+    padding: 3vh;
+}
+
+#fullscreen-overlay {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.9) no-repeat center;
+    background-size: contain;
+    cursor: zoom-out;
+}
